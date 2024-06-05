@@ -1,0 +1,13 @@
+{
+  "name": "C++ OpenCV Dev Container",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "apt-get update && apt-get install -y libopencv-dev"
+}
